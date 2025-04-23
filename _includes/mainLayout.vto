@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/png" href="/assets/Favicon.png" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+  <main>
+        <div id="menu" class="block">
+        <nav>
+          <ul>
+            <li><a href="/about">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/donate">Donate</a></li>
+          </ul>
+        </nav>
+      </div>
+    <div id="pageContent">
+      <div id="content" class="block pane">
+        {{ content }}
+      </div>
+      <div id="image" class="pane">
+        <img src="/assets/{{image}}" alt="Image" />
+      </div>
+    </div>
+  </main>
+  </body>
+</html>
