@@ -1,18 +1,36 @@
 :root {
     --background-color: #922950;
     --text-color: #922950;
+    --link-text-color: #ff005d;
+    --link-hover-color: #ce3e6b;
     --border-color: #ce3e6b;
     --content-background-color: #fe76b0;
     background-color: var(--background-color);
+    color: var(--text-color);
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;
     image-rendering: -o-crisp-edges;
+    
+}
+@font-face {
+    font-family: 'ShureTechMono Nerd Font';
+    src: url(/assets/ShureTechMonoNerdFont-Regular.ttf);
+}
+body {
+    font-family: 'ShureTechMono Nerd Font', monospace;
+}
+a {
+    text-decoration: none;
+    color: var(--link-text-color);
+}
+a:hover {
+    color: var(--link-hover-color);
 }
 
 .block {
   background-color: var(--content-background-color);
-  color: var(--text-color);
+  
   font-size: 24px;
   width: 75%;
   margin: 0 auto;
@@ -25,7 +43,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 #menu {
     width: 80%;
@@ -34,6 +51,8 @@ main {
     align-items: center;
     justify-content: center;
     padding: 0;
+    margin: 10vh 0;
+    margin-top: 0;
 }
 nav {
     display: flex;
@@ -83,4 +102,64 @@ nav ul li a:hover {
 }
 #image img {
     height: 100%;
+}
+#footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+}
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+#buttonContainer img {
+    height: 100%;
+}
+#footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        
+    }
+    #content, #image {
+        height: auto;
+        width: 100%;
+    }
+    #image {
+        position: fixed;
+        top: 20vh;
+        left: 10vw;
+        width: 90vw;
+        height: 90vh;
+        z-index: -1;
+        pointer-events: none;
+    }
+    #image img {
+        object-fit: cover;
+        object-position: center;
+    }
+    #menu {
+        flex-direction: column;
+        margin: 5vh 0;
+        
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    nav ul li a {
+        font-size: 48px !important;
+    }
 }

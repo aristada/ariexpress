@@ -14,4 +14,5 @@ image: Home.png
 ## What am I doing:
 - Part of a thing, check it out: [The Digital Coven](https://witchcraft.systems)
 - Do art here: [Bluesky link](https://bsky.app/profile/ari.mom)
+- Stream very occasionally on [Twitch](https://www.twitch.tv/ari_express)
 - Know a bit about a lot of webdev technologies, but Deno/TS/Svelte is my one true love \<3

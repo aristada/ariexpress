@@ -5,19 +5,20 @@
     <title>{{ title }}</title>
     <link rel="icon" type="image/png" href="/assets/Favicon.png" />
     <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
   <main>
-        <div id="menu" class="block">
-        <nav>
-          <ul>
-            <li><a href="/about">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/donate">Donate</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div id="menu" class="block">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/donate">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
     <div id="pageContent">
       <div id="content" class="block pane">
         {{ content }}
@@ -25,6 +26,13 @@
       <div id="image" class="pane">
         <img src="/assets/{{image}}" alt="Image" />
       </div>
+    </div>
+    <div id="footer" class="block">
+      <div id="buttonsContainer">
+        <a href="https://ari.express"><img id="buttonMe" src="/assets/Button.png" alt="Button Me" /></a>
+        <a href="https://witchcraft.systems"><img id="buttonWS" src="/assets/PWsbutton.png" alt="Button WS" /></a>
+      </div>
+      <p>© 2025 Ari</p>
     </div>
   </main>
   </body>
